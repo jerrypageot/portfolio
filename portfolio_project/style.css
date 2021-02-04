@@ -87,7 +87,8 @@ a {
     left: 0;
     width: 100%;
     height: 100%;
-    background: #2d4463;
+    /* background: #2d4463; */
+    background: #333;
     opacity: 0.4;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
@@ -147,10 +148,11 @@ a {
 
 /* Skills */
 #skills{
-    background: cornsilk;
+    /* background: #e8e9eb; */
+    height: 50vh;
 }
 .skills-content {
-    height: 20vh;
+    padding-left: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -162,7 +164,7 @@ a {
 }
 
 .section-header{
-    /* background: coral; */
+    padding-top: 5rem;
     display: flex;
     align-items: center;
     margin-bottom: 5rem;
@@ -170,13 +172,25 @@ a {
 
 .skills-content .side-line {
     display: inline-block;
-    width: .5rem;
-    height: 3.8rem;
+    width: .4rem;
+    height: 2.8rem;
     background: #4475e2;
-    margin-right: .8rem;
+    margin-right: .6rem;
 }
-.skills-content ul {
+.skills-content ul{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    color: #c9c8c8;
+    text-align: center;
+}
+.skills-content ul li:hover{
+    color: #4475e2;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    
+}
+.skills-content ul i{
+    font-size: 60px;
+    padding-bottom: .5rem;
 }
